@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><!-- ЗАМЕНИ: название бригады -->СтройБригада — ремонт и строительство</title>
+  <title>DemoStroyka — ремонт и строительство под ключ</title>
 
   <!-- Open Graph — превью ссылки в мессенджерах -->
-  <meta property="og:title" content="СтройБригада — Ремонт и строительство под ключ">
+  <meta property="og:title" content="DemoStroyka — Ремонт и строительство под ключ">
   <meta property="og:description" content="Рассчитайте стоимость и запишитесь на замер прямо в нашем Telegram-боте за 1 минуту.">
   <meta property="og:type" content="website">
   <!-- ЗАМЕНИ: URL сайта после деплоя -->
   <meta property="og:url" content="https://example.com">
 
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -19,16 +21,18 @@
 </head>
 <body>
 
-  <!-- ЗАМЕНИ: ссылка на Telegram-бота (имя бота и параметр start) -->
-  <!-- href="https://t.me/ИМЯ_БОТА?start=website" -->
+  <!-- Telegram-бот: https://t.me/StroykaBrigada_bot?start=website -->
 
   <!-- ========== ХЕДЕР ========== -->
   <header class="header">
     <div class="container header__inner">
-      <a href="#" class="logo"><!-- ЗАМЕНИ: название бригады -->СтройБригада</a>
+      <a href="#" class="logo">
+        <span class="logo__name">DemoStroyka</span>
+        <span class="logo__tag">Demo Project</span>
+      </a>
       <div class="header__contacts">
         <a href="tel:+79001234567" class="header__phone"><!-- ЗАМЕНИ: телефон -->+7 (900) 123-45-67</a>
-        <a href="https://t.me/USERNAME?start=website" class="header__tg" target="_blank" rel="noopener" aria-label="Написать в Telegram">
+        <a href="https://t.me/StroykaBrigada_bot?start=website" class="header__tg" target="_blank" rel="noopener" aria-label="Написать в Telegram">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
         </a>
       </div>
@@ -51,7 +55,7 @@
             <li class="hero__feature">✔ Бесплатный расчёт</li>
           </ul>
           <div class="hero__actions">
-            <a href="https://t.me/USERNAME?start=website" class="btn btn--telegram" target="_blank" rel="noopener">
+            <a href="https://t.me/StroykaBrigada_bot?start=website" class="btn btn--telegram" target="_blank" rel="noopener">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
               Рассчитать стоимость в Telegram
             </a>
@@ -61,8 +65,8 @@
           <!-- ЗАМЕНИ: фото проекта -->
           <img
             class="hero__image"
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=85&auto=format&fit=crop"
-            alt="Современный частный дом"
+            src="https://images.unsplash.com/photo-1600047509438-309cf9bf0117?w=1200&q=85&auto=format&fit=crop"
+            alt="Современный минималистичный дом"
             width="640"
             height="720"
             loading="eager"
@@ -86,43 +90,51 @@
         </header>
         <div class="projects__grid">
           <article class="project-card project-card--large">
-            <img class="project-card__img" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=85&auto=format&fit=crop" alt="Дом в Подмосковье" loading="lazy">
+            <img class="project-card__img" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=85&auto=format&fit=crop" alt="Современный коттедж" loading="lazy" width="800" height="560">
             <div class="project-card__overlay">
-              <h3 class="project-card__title">Дом в Подмосковье</h3>
-              <p class="project-card__meta"><span>320 м²</span><span>8 месяцев</span></p>
-              <a href="https://t.me/USERNAME?start=website" class="project-card__link" target="_blank" rel="noopener">Смотреть проект →</a>
+              <h3 class="project-card__title">Современный коттедж</h3>
+              <p class="project-card__meta"><span>320 м²</span><span>10 месяцев</span><span>Москва</span></p>
+              <a href="https://t.me/StroykaBrigada_bot?start=website" class="project-card__link" target="_blank" rel="noopener">Смотреть проект →</a>
             </div>
           </article>
           <article class="project-card project-card--large">
-            <img class="project-card__img" src="https://images.unsplash.com/photo-1605276374104-de6862b73811?w=1200&q=85&auto=format&fit=crop" alt="Коттедж у воды" loading="lazy">
+            <img class="project-card__img" src="https://images.unsplash.com/photo-1605276374104-de6862b73811?w=1200&q=85&auto=format&fit=crop" alt="Минималистичный дом" loading="lazy" width="800" height="560">
             <div class="project-card__overlay">
-              <h3 class="project-card__title">Коттедж у воды</h3>
-              <p class="project-card__meta"><span>410 м²</span><span>11 месяцев</span></p>
-              <a href="https://t.me/USERNAME?start=website" class="project-card__link" target="_blank" rel="noopener">Смотреть проект →</a>
+              <h3 class="project-card__title">Минималистичный дом</h3>
+              <p class="project-card__meta"><span>410 м²</span><span>12 месяцев</span><span>Екатеринбург</span></p>
+              <a href="https://t.me/StroykaBrigada_bot?start=website" class="project-card__link" target="_blank" rel="noopener">Смотреть проект →</a>
             </div>
           </article>
           <article class="project-card">
-            <img class="project-card__img" src="https://images.unsplash.com/photo-1618221195710-dd6b41fa3246?w=800&q=85&auto=format&fit=crop" alt="Пентхаус на Арбате" loading="lazy">
+            <img class="project-card__img" src="https://images.unsplash.com/photo-1513584684374-8bab748ffe08?w=800&q=85&auto=format&fit=crop" alt="Таунхаус" loading="lazy" width="480" height="320">
             <div class="project-card__overlay">
-              <h3 class="project-card__title">Пентхаус на Арбате</h3>
-              <p class="project-card__meta"><span>185 м²</span><span>5 мес.</span></p>
-              <a href="https://t.me/USERNAME?start=website" class="project-card__link" target="_blank" rel="noopener">Смотреть →</a>
+              <h3 class="project-card__title">Таунхаус</h3>
+              <p class="project-card__meta"><span>180 м²</span><span>6 месяцев</span><span>Санкт-Петербург</span></p>
+              <a href="https://t.me/StroykaBrigada_bot?start=website" class="project-card__link" target="_blank" rel="noopener">Смотреть →</a>
             </div>
           </article>
           <article class="project-card">
-            <img class="project-card__img" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=85&auto=format&fit=crop" alt="Кухня-столовая" loading="lazy">
+            <img class="project-card__img" src="https://images.unsplash.com/photo-1600566753190-17f95baa8a74?w=800&q=85&auto=format&fit=crop" alt="Загородный дом" loading="lazy" width="480" height="320">
             <div class="project-card__overlay">
-              <h3 class="project-card__title">Кухня-столовая</h3>
-              <p class="project-card__meta"><span>42 м²</span><span>6 нед.</span></p>
-              <a href="https://t.me/USERNAME?start=website" class="project-card__link" target="_blank" rel="noopener">Смотреть →</a>
+              <h3 class="project-card__title">Загородный дом</h3>
+              <p class="project-card__meta"><span>250 м²</span><span>8 месяцев</span><span>Казань</span></p>
+              <a href="https://t.me/StroykaBrigada_bot?start=website" class="project-card__link" target="_blank" rel="noopener">Смотреть →</a>
             </div>
           </article>
           <article class="project-card">
-            <img class="project-card__img" src="https://images.unsplash.com/photo-1600210492490-0946911069f1?w=800&q=85&auto=format&fit=crop" alt="Лофт на набережной" loading="lazy">
+            <img class="project-card__img" src="https://images.unsplash.com/photo-1600210492486-5160451229fc?w=800&q=85&auto=format&fit=crop" alt="Квартира Premium" loading="lazy" width="480" height="320">
             <div class="project-card__overlay">
-              <h3 class="project-card__title">Лофт на набережной</h3>
-              <p class="project-card__meta"><span>96 м²</span><span>3 мес.</span></p>
-              <a href="https://t.me/USERNAME?start=website" class="project-card__link" target="_blank" rel="noopener">Смотреть →</a>
+              <h3 class="project-card__title">Квартира Premium</h3>
+              <p class="project-card__meta"><span>140 м²</span><span>5 месяцев</span><span>Москва</span></p>
+              <a href="https://t.me/StroykaBrigada_bot?start=website" class="project-card__link" target="_blank" rel="noopener">Смотреть →</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <img class="project-card__img" src="https://images.unsplash.com/photo-1600573476544-0b2c2a4e6400?w=800&q=85&auto=format&fit=crop" alt="Современная вилла" loading="lazy" width="480" height="320">
+            <div class="project-card__overlay">
+              <h3 class="project-card__title">Современная вилла</h3>
+              <p class="project-card__meta"><span>520 м²</span><span>14 месяцев</span><span>Краснодар</span></p>
+              <a href="https://t.me/StroykaBrigada_bot?start=website" class="project-card__link" target="_blank" rel="noopener">Смотреть →</a>
             </div>
           </article>
         </div>
@@ -133,8 +145,8 @@
     <figure class="visual-break animate-in">
       <img
         class="visual-break__img"
-        src="https://images.unsplash.com/photo-1600047509807-bc179f28a81d?w=1920&q=85&auto=format&fit=crop"
-        alt=""
+        src="https://images.unsplash.com/photo-1600596542813-ff9a28841199?w=1920&q=85&auto=format&fit=crop"
+        alt="Современная архитектура"
         loading="lazy"
       >
       <blockquote class="visual-break__quote">
@@ -307,7 +319,7 @@
           </div>
         </div>
         <div class="pricing__cta">
-          <a href="https://t.me/USERNAME?start=website" class="btn btn--telegram" target="_blank" rel="noopener">Рассчитать точную стоимость</a>
+          <a href="https://t.me/StroykaBrigada_bot?start=website" class="btn btn--telegram" target="_blank" rel="noopener">Рассчитать точную стоимость</a>
         </div>
       </div>
     </section>
@@ -342,16 +354,20 @@
 
     <!-- ========== CTA ========== -->
     <section class="cta animate-in" id="contacts">
-      <div class="container">
-        <div class="cta__inner">
-          <span class="badge">Начните сегодня</span>
-          <h2 class="cta__title">Готовы обсудить ваш проект?</h2>
-          <p class="cta__text">Оставьте заявку в Telegram — рассчитаем стоимость, назначим замер и ответим на все вопросы в течение 15 минут.</p>
-          <a href="https://t.me/USERNAME?start=website" class="btn btn--telegram btn--xl" target="_blank" rel="noopener">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-            Записаться в Telegram
-          </a>
-        </div>
+      <img
+        class="cta__bg"
+        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=85&auto=format&fit=crop"
+        alt=""
+        loading="lazy"
+      >
+      <div class="cta__overlay" aria-hidden="true"></div>
+      <div class="container cta__content">
+        <h2 class="cta__title">Готовы обсудить ваш проект?</h2>
+        <p class="cta__text">Создадим сайт и Telegram-бот,<br>которые будут приносить заявки уже через несколько дней.</p>
+        <a href="https://t.me/Moscow27" class="btn btn--telegram btn--xl" target="_blank" rel="noopener">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          Написать в Telegram
+        </a>
       </div>
     </section>
 
@@ -363,9 +379,15 @@
       <div class="footer__grid">
         <div class="footer__col footer__col--brand">
           <p class="footer__brand">DemoStroyka</p>
-          <p class="footer__desc">Это демонстрационный проект сайта и Telegram-бота для строительных компаний. Такой комплект полностью адаптируется под любую строительную компанию за 1–3 дня.</p>
-          <p class="footer__cta-text">Хотите получить похожий сайт?</p>
-          <a href="https://t.me/Moscow27" class="footer__telegram" target="_blank" rel="noopener">Telegram<br>@Moscow27</a>
+          <p class="footer__tag">Demo Project</p>
+          <p class="footer__desc">Это демонстрационный проект сайта и Telegram-бота для строительных компаний. Мы можем полностью адаптировать этот сайт под вашу компанию за 1–3 дня.</p>
+          <div class="footer__contact-box">
+            <p class="footer__heading">Контакты</p>
+            <a href="https://t.me/Moscow27" class="footer__telegram" target="_blank" rel="noopener">
+              <span class="footer__telegram-label">Telegram</span>
+              @Moscow27
+            </a>
+          </div>
         </div>
         <div class="footer__col">
           <p class="footer__heading">Навигация</p>
@@ -396,13 +418,13 @@
       </div>
       <div class="footer__bottom">
         <p class="footer__copy">&copy; DemoStroyka</p>
-        <p class="footer__credit">Designed &amp; Developed by Moscow27</p>
+        <p class="footer__credit">Designed &amp; Developed by <a href="https://t.me/Moscow27" class="footer__credit-link" target="_blank" rel="noopener">Moscow27</a></p>
       </div>
     </div>
   </footer>
 
   <!-- Плавающая кнопка Telegram — только мобильные -->
-  <a href="https://t.me/USERNAME?start=website" class="tg-floating-button" target="_blank" rel="noopener" aria-label="Записаться в Telegram-боте">
+  <a href="https://t.me/StroykaBrigada_bot?start=website" class="tg-floating-button" target="_blank" rel="noopener" aria-label="Записаться в Telegram-боте">
     <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
   </a>
 
