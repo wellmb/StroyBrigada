@@ -40,7 +40,15 @@ a {
   font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: 700;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.section-desc {
+  text-align: center;
+  color: #555;
+  max-width: 560px;
+  margin: 0 auto 2.5rem;
+  font-size: 1rem;
 }
 
 /* ===== Buttons ===== */
@@ -56,7 +64,17 @@ a {
   border-radius: 8px;
   border: 2px solid transparent;
   cursor: pointer;
-  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(224, 123, 0, 0.25);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: none;
 }
 
 .btn--primary {
@@ -81,13 +99,26 @@ a {
   color: #ffffff;
 }
 
+.btn--telegram {
+  background: #0088cc;
+  color: #ffffff;
+  border-color: #0088cc;
+}
+
+.btn--telegram:hover {
+  background: #006da3;
+  border-color: #006da3;
+  box-shadow: 0 6px 20px rgba(0, 136, 204, 0.35);
+}
+
 .btn--sm {
   padding: 10px 20px;
   font-size: 0.875rem;
 }
 
-.btn--full {
-  width: 100%;
+.btn--lg {
+  padding: 16px 32px;
+  font-size: 1.0625rem;
 }
 
 /* ===== Header ===== */
@@ -161,25 +192,32 @@ a {
   gap: 12px;
 }
 
-/* ===== Services ===== */
-.services {
-  padding: 64px 0;
-}
-
-.services__grid {
+/* ===== Cards Grid (Services & Guarantees) ===== */
+.cards-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-.service-card {
+.cards-grid--3 {
+  grid-template-columns: 1fr;
+}
+
+.card {
   padding: 28px 24px;
   border: 1px solid #eee;
   border-radius: 12px;
   background: #ffffff;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
 
-.service-card__icon {
+.card:hover {
+  border-color: #f0c080;
+  box-shadow: 0 8px 24px rgba(224, 123, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.card__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -191,15 +229,25 @@ a {
   color: #E07B00;
 }
 
-.service-card__title {
+.card--guarantee .card__icon {
+  background: #eef6ff;
+  color: #0088cc;
+}
+
+.card__title {
   font-size: 1.125rem;
   font-weight: 600;
   margin-bottom: 8px;
 }
 
-.service-card__text {
+.card__text {
   font-size: 0.9375rem;
   color: #555;
+}
+
+/* ===== Services ===== */
+.services {
+  padding: 64px 0;
 }
 
 /* ===== Stats ===== */
@@ -230,56 +278,100 @@ a {
   color: #555;
 }
 
-/* ===== Form ===== */
-.form-section {
-  padding: 64px 0 80px;
+/* ===== Pricing Table ===== */
+.pricing {
+  padding: 64px 0;
+  background: #fafafa;
 }
 
-.form-section__desc {
-  text-align: center;
-  color: #555;
-  margin-bottom: 2rem;
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.form {
-  max-width: 480px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.form__group {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.form__label {
-  font-size: 0.875rem;
-  font-weight: 500;
-}
-
-.form__input,
-.form__select {
-  width: 100%;
-  padding: 12px 16px;
-  font-family: inherit;
-  font-size: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+.pricing__table-wrap {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid #eee;
   background: #ffffff;
-  color: #1a1a1a;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
 }
 
-.form__input:focus,
-.form__select:focus {
-  outline: 2px solid #E07B00;
-  outline-offset: 0;
-  border-color: #E07B00;
+.pricing__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.pricing__table thead {
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+.pricing__table th {
+  padding: 14px 20px;
+  text-align: left;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.pricing__table th:last-child {
+  text-align: right;
+}
+
+.pricing__table td {
+  padding: 12px 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.pricing__table td:last-child {
+  text-align: right;
+  font-weight: 600;
+  color: #E07B00;
+  white-space: nowrap;
+}
+
+.pricing__table tbody tr:not(.pricing__category):hover {
+  background: #fff8f0;
+}
+
+.pricing__category td {
+  background: #fff3e6;
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 10px 20px;
+  border-bottom: 1px solid #f0dcc4;
+}
+
+.pricing__cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* ===== Guarantees ===== */
+.guarantees {
+  padding: 64px 0;
+}
+
+/* ===== CTA Section ===== */
+.cta {
+  padding: 64px 0 80px;
+  background: linear-gradient(180deg, #ffffff 0%, #fff8f0 100%);
+}
+
+.cta__inner {
+  text-align: center;
+  max-width: 560px;
+}
+
+.cta__title {
+  font-size: clamp(1.375rem, 4vw, 1.75rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.cta__text {
+  color: #555;
+  margin-bottom: 1.75rem;
 }
 
 /* ===== Footer ===== */
@@ -331,10 +423,17 @@ a {
   font-size: 0.9375rem;
   border-radius: 50px;
   box-shadow: 0 4px 16px rgba(0, 136, 204, 0.4);
+  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 
 .telegram-float:hover {
   background: #006da3;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 136, 204, 0.45);
+}
+
+.telegram-float:active {
+  transform: translateY(0);
 }
 
 .telegram-float__icon {
@@ -343,8 +442,12 @@ a {
 
 /* ===== Responsive ===== */
 @media (min-width: 768px) {
-  .services__grid {
+  .cards-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cards-grid--3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .footer__inner {
@@ -356,6 +459,12 @@ a {
 
 @media (max-width: 480px) {
   .header__phone {
+    font-size: 0.875rem;
+  }
+
+  .pricing__table th,
+  .pricing__table td {
+    padding: 10px 14px;
     font-size: 0.875rem;
   }
 
