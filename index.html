@@ -14,7 +14,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -38,23 +38,35 @@
   <main>
 
     <!-- ========== HERO ========== -->
-    <section class="hero">
+    <section class="hero animate-in">
       <div class="container hero__inner">
-        <h1 class="hero__title">Ремонт и строительство под ключ в <!-- ЗАМЕНИ: город -->Москве</h1>
-        <p class="hero__subtitle">Более <!-- ЗАМЕНИ: лет опыта -->10 лет опыта, честные сметы и фиксированные сроки. Работаем по договору с гарантией на все виды работ.</p>
-        <div class="hero__actions">
-          <a href="https://t.me/USERNAME?start=website" class="btn btn--telegram" target="_blank" rel="noopener">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-            Рассчитать стоимость в Telegram
-          </a>
+        <div class="hero__content">
+          <span class="badge badge--hero">Премиальный подрядчик</span>
+          <h1 class="hero__title">Ремонт и строительство под ключ в <!-- ЗАМЕНИ: город -->Москве</h1>
+          <p class="hero__subtitle">Более <!-- ЗАМЕНИ: лет опыта -->10 лет опыта, честные сметы и фиксированные сроки. Работаем по договору с гарантией на все виды работ.</p>
+          <div class="hero__actions">
+            <a href="https://t.me/USERNAME?start=website" class="btn btn--telegram" target="_blank" rel="noopener">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              Рассчитать стоимость в Telegram
+            </a>
+          </div>
         </div>
+        <!-- ЗАМЕНИ: фото проекта -->
+        <img
+          class="hero__image"
+          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=85&auto=format&fit=crop"
+          alt="Современный частный дом"
+          width="640"
+          height="720"
+          loading="eager"
+        >
       </div>
     </section>
 
     <!-- ========== УСЛУГИ ========== -->
-    <section class="services" id="services">
+    <section class="services animate-in" id="services">
       <div class="container">
-        <h2 class="section-title">Наши услуги</h2>
+        <h2 class="section-title" data-badge="Услуги">Наши услуги</h2>
         <p class="section-desc">Полный цикл работ — от проекта до сдачи объекта под ключ.</p>
         <div class="cards-grid">
           <article class="card">
@@ -90,9 +102,9 @@
     </section>
 
     <!-- ========== ПОЧЕМУ МЫ ========== -->
-    <section class="stats">
+    <section class="stats animate-in">
       <div class="container">
-        <h2 class="section-title">Почему мы</h2>
+        <h2 class="section-title" data-badge="О компании">Почему мы</h2>
         <div class="stats__grid">
           <div class="stat">
             <span class="stat__number"><!-- ЗАМЕНИ: лет опыта -->10+</span>
@@ -111,89 +123,42 @@
     </section>
 
     <!-- ========== ПРАЙС-ЛИСТ ========== -->
-    <section class="pricing" id="pricing">
+    <section class="pricing animate-in" id="pricing">
       <div class="container">
-        <h2 class="section-title">Прайс-лист</h2>
+        <h2 class="section-title" data-badge="Стоимость">Прайс-лист</h2>
         <p class="section-desc">Ориентировочные цены. Точный расчёт — в Telegram-боте за 2 минуты.</p>
-        <div class="pricing__table-wrap">
-          <table class="pricing__table">
-            <thead>
-              <tr>
-                <th scope="col">Вид работ</th>
-                <th scope="col">Ед. изм.</th>
-                <th scope="col">Цена от</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="pricing__category">
-                <td colspan="3">Ремонт квартир</td>
-              </tr>
-              <tr>
-                <td>Косметический ремонт</td>
-                <td>м²</td>
-                <td><!-- ЗАМЕНИ: цена -->3 500 ₽</td>
-              </tr>
-              <tr>
-                <td>Капитальный ремонт</td>
-                <td>м²</td>
-                <td><!-- ЗАМЕНИ: цена -->8 000 ₽</td>
-              </tr>
-              <tr>
-                <td>Ремонт в новостройке</td>
-                <td>м²</td>
-                <td><!-- ЗАМЕНИ: цена -->6 500 ₽</td>
-              </tr>
-              <tr class="pricing__category">
-                <td colspan="3">Строительство</td>
-              </tr>
-              <tr>
-                <td>Коробка дома</td>
-                <td>м²</td>
-                <td><!-- ЗАМЕНИ: цена -->25 000 ₽</td>
-              </tr>
-              <tr>
-                <td>Фундамент (ленточный)</td>
-                <td>м. п.</td>
-                <td><!-- ЗАМЕНИ: цена -->12 000 ₽</td>
-              </tr>
-              <tr>
-                <td>Кровля (металлочерепица)</td>
-                <td>м²</td>
-                <td><!-- ЗАМЕНИ: цена -->2 800 ₽</td>
-              </tr>
-              <tr class="pricing__category">
-                <td colspan="3">Отделочные работы</td>
-              </tr>
-              <tr>
-                <td>Штукатурка стен</td>
-                <td>м²</td>
-                <td><!-- ЗАМЕНИ: цена -->650 ₽</td>
-              </tr>
-              <tr>
-                <td>Укладка плитки</td>
-                <td>м²</td>
-                <td><!-- ЗАМЕНИ: цена -->1 800 ₽</td>
-              </tr>
-              <tr>
-                <td>Монтаж натяжного потолка</td>
-                <td>м²</td>
-                <td><!-- ЗАМЕНИ: цена -->550 ₽</td>
-              </tr>
-              <tr class="pricing__category">
-                <td colspan="3">Дизайн и проектирование</td>
-              </tr>
-              <tr>
-                <td>Дизайн-проект квартиры</td>
-                <td>м²</td>
-                <td><!-- ЗАМЕНИ: цена -->2 500 ₽</td>
-              </tr>
-              <tr>
-                <td>3D-визуализация</td>
-                <td>ракурс</td>
-                <td><!-- ЗАМЕНИ: цена -->5 000 ₽</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="pricing__cards">
+          <div class="pricing__group">
+            <h3 class="pricing__group-title">Ремонт квартир</h3>
+            <ul class="pricing__list">
+              <li class="pricing__item"><span class="pricing__item-name">Косметический ремонт</span><span class="pricing__item-meta">м²</span><span class="pricing__item-price"><!-- ЗАМЕНИ: цена -->от 3 500 ₽</span></li>
+              <li class="pricing__item"><span class="pricing__item-name">Капитальный ремонт</span><span class="pricing__item-meta">м²</span><span class="pricing__item-price"><!-- ЗАМЕНИ: цена -->от 8 000 ₽</span></li>
+              <li class="pricing__item"><span class="pricing__item-name">Ремонт в новостройке</span><span class="pricing__item-meta">м²</span><span class="pricing__item-price"><!-- ЗАМЕНИ: цена -->от 6 500 ₽</span></li>
+            </ul>
+          </div>
+          <div class="pricing__group">
+            <h3 class="pricing__group-title">Строительство</h3>
+            <ul class="pricing__list">
+              <li class="pricing__item"><span class="pricing__item-name">Коробка дома</span><span class="pricing__item-meta">м²</span><span class="pricing__item-price"><!-- ЗАМЕНИ: цена -->от 25 000 ₽</span></li>
+              <li class="pricing__item"><span class="pricing__item-name">Фундамент (ленточный)</span><span class="pricing__item-meta">м. п.</span><span class="pricing__item-price"><!-- ЗАМЕНИ: цена -->от 12 000 ₽</span></li>
+              <li class="pricing__item"><span class="pricing__item-name">Кровля (металлочерепица)</span><span class="pricing__item-meta">м²</span><span class="pricing__item-price"><!-- ЗАМЕНИ: цена -->от 2 800 ₽</span></li>
+            </ul>
+          </div>
+          <div class="pricing__group">
+            <h3 class="pricing__group-title">Отделочные работы</h3>
+            <ul class="pricing__list">
+              <li class="pricing__item"><span class="pricing__item-name">Штукатурка стен</span><span class="pricing__item-meta">м²</span><span class="pricing__item-price"><!-- ЗАМЕНИ: цена -->от 650 ₽</span></li>
+              <li class="pricing__item"><span class="pricing__item-name">Укладка плитки</span><span class="pricing__item-meta">м²</span><span class="pricing__item-price"><!-- ЗАМЕНИ: цена -->от 1 800 ₽</span></li>
+              <li class="pricing__item"><span class="pricing__item-name">Монтаж натяжного потолка</span><span class="pricing__item-meta">м²</span><span class="pricing__item-price"><!-- ЗАМЕНИ: цена -->от 550 ₽</span></li>
+            </ul>
+          </div>
+          <div class="pricing__group">
+            <h3 class="pricing__group-title">Дизайн и проектирование</h3>
+            <ul class="pricing__list">
+              <li class="pricing__item"><span class="pricing__item-name">Дизайн-проект квартиры</span><span class="pricing__item-meta">м²</span><span class="pricing__item-price"><!-- ЗАМЕНИ: цена -->от 2 500 ₽</span></li>
+              <li class="pricing__item"><span class="pricing__item-name">3D-визуализация</span><span class="pricing__item-meta">ракурс</span><span class="pricing__item-price"><!-- ЗАМЕНИ: цена -->от 5 000 ₽</span></li>
+            </ul>
+          </div>
         </div>
         <div class="pricing__cta">
           <a href="https://t.me/USERNAME?start=website" class="btn btn--telegram" target="_blank" rel="noopener">Рассчитать точную стоимость</a>
@@ -202,9 +167,9 @@
     </section>
 
     <!-- ========== ГАРАНТИИ ========== -->
-    <section class="guarantees" id="guarantees">
+    <section class="guarantees animate-in" id="guarantees">
       <div class="container">
-        <h2 class="section-title">Наши гарантии</h2>
+        <h2 class="section-title" data-badge="Надёжность">Наши гарантии</h2>
         <p class="section-desc">Работаем прозрачно и несём ответственность за результат.</p>
         <div class="cards-grid cards-grid--3">
           <article class="card card--guarantee">
@@ -233,7 +198,7 @@
     </section>
 
     <!-- ========== CTA ========== -->
-    <section class="cta">
+    <section class="cta animate-in">
       <div class="container cta__inner">
         <h2 class="cta__title">Готовы начать ремонт или строительство?</h2>
         <p class="cta__text">Запишитесь через Telegram-бота — ответим за 15 минут и подготовим расчёт под ваш объект.</p>
